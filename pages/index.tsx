@@ -22,6 +22,15 @@ const Home: NextPage = () => {
           <Text>
             Quickly get the schema you need for the basic elements you need...
           </Text>
+          <Text weight="bold">
+            <a
+              href="https://github.com/dorelljames/sanity-elements/issues"
+              target="_blank"
+              rel="noreferrer"
+            >
+              +? Help us by submitting a new issue here.
+            </a>
+          </Text>
         </Stack>
         <Stack marginTop={4} space={[3, 3, 4, 4]}>
           <TextInput
