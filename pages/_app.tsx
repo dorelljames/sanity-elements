@@ -1,8 +1,13 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import "../styles/globals.css";
+import { studioTheme, ThemeProvider } from "@sanity/ui";
+import type { AppProps } from "next/app";
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  return (
+    <ThemeProvider theme={studioTheme}>
+      <Component {...pageProps} />
+    </ThemeProvider>
+  );
 }
 
-export default MyApp
+export default MyApp;
